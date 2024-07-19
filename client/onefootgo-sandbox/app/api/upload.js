@@ -8,6 +8,16 @@ export const config = {
     }
 };
 
+export async function POST(request){
+    
+}
+
+
+export default function handler(req, res) {
+    res.status(200).json({ message: 'Route is working' });
+  }
+
+/*
 export default async function file_handler(req) {
     if (req.method != 'POST') {
         return new Response(`Method ${req.method} Not Allowed`, {status:405})
@@ -29,8 +39,6 @@ export default async function file_handler(req) {
         const newPath = path.join(form.uploadDir, fileDetails.originalFilename);
         await fs.promises.rename(oldPath, newPath);
 
-        await fs.rename(oldPath, newPath);
-
         console.log(`File Saved to ${newPath}`);
         return new Response(JSON.stringify({ message: 'File uploaded successfully!' }), {
             status: 200,
@@ -43,4 +51,4 @@ export default async function file_handler(req) {
     }
     
     
-}
+}*/
