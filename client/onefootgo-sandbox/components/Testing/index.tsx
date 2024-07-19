@@ -1,4 +1,5 @@
-/* @client */
+'use client'
+
 import React, {useEffect, useState} from 'react'
 
 function Testing() {
