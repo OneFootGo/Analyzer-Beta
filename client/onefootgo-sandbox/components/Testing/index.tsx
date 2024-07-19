@@ -19,9 +19,6 @@ function Testing() {
   return(
     <div>
       <div>{message}</div>
-      {people.map((person, index) => (
-        <div key={index}>{person}</div>
-        ))}
     </div>
   )
 
